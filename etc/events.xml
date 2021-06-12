@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author:  MonishTrivedi
+ * @package: TrainingMonish_LoginIP
+ */
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="backend_auth_user_login_success">
+        <observer name="mp_login_success" instance="TrainingMonish\LoginIP\Observer\LoginSuccess"/>
+    </event>
+    <event name="backend_auth_user_login_failed">
+        <observer name="mp_login_failed" instance="TrainingMonish\LoginIP\Observer\LoginFailed"/>
+    </event>
+    <event name="mageplaza_report_init_cards">
+        <observer name="mp_security_reports" instance="TrainingMonish\LoginIP\Observer\CardsManageFactory" />
+    </event>
+</config>

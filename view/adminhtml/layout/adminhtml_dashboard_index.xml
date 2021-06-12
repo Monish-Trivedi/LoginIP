@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author:  MonishTrivedi
+ * @package: TrainingMonish_LoginIP
+ */
+
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="trainingmonish_loginip::css/custom.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="TrainingMonish\LoginIP\Block\Adminhtml\Dashboard\LoginLog\Grid" ifconfig="security/general/enabled" name="loginLog"/>
+        </referenceContainer>
+    </body>
+</page>

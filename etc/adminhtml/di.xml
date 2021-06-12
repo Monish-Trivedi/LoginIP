@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author:  MonishTrivedi
+ * @package: TrainingMonish_LoginIP
+ */
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="\Magento\Backend\Controller\Adminhtml\Auth\Login">
+        <plugin name="mp_security_login" type="TrainingMonish\LoginIP\Plugin\Login"/>
+    </type>
+    <type name="\Magento\User\Model\ResourceModel\User">
+        <plugin name="mp_security_lock_user" type="TrainingMonish\LoginIP\Plugin\LockUser"/>
+    </type>
+    <type name="Magento\Ui\Model\Export\MetadataProvider">
+        <arguments>
+            <argument name="data" xsi:type="array">
+                <item name="trainingmonish_loginip_loginlog_listing" xsi:type="array">
+                    <item name="created_at" xsi:type="string">time</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>

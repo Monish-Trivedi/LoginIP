@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author:  MonishTrivedi
+ * @package: TrainingMonish_LoginIP
+ */
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="trainingmonish_loginip::security" title="Security" module="trainingmonish_loginip" sortOrder="70" resource="trainingmonish_loginip::security" parent="Magento_Backend::system"/>
+        <add id="trainingmonish_loginip::grid" title="Login Log" module="trainingmonish_loginip" sortOrder="10" action="mpsecurity/loginlog" resource="trainingmonish_loginip::grid" parent="trainingmonish_loginip::security"/>
+        <add id="trainingmonish_loginip::checklist" title="Checklist" module="trainingmonish_loginip" sortOrder="15" action="mpsecurity/checklist" resource="trainingmonish_loginip::checklist" parent="trainingmonish_loginip::security"/>
+        <add id="trainingmonish_loginip::configuration" title="Configuration" module="trainingmonish_loginip" sortOrder="999" action="adminhtml/system_config/edit/section/security" resource="trainingmonish_loginip::configuration" parent="trainingmonish_loginip::security"/>
+    </menu>
+</config>
