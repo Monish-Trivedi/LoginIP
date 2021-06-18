@@ -147,8 +147,8 @@ class SendMail
                         'failed_count' => $failedCount,
                         'failed_time'  => $failedTime,
                         'viewLogUrl'   => $this->backendUrl->getUrl('mpsecurity/loginlog/'),
-                        'logo_url'     => 'https://www.mageplaza.com/media/mageplaza-security-email.png',
-                        'logo_alt'     => 'Mageplaza',
+                        'logo_url'     => '',
+                        'logo_alt'     => 'LoginIP',
                         'store_url'    => $storeUrl
                     ];
 

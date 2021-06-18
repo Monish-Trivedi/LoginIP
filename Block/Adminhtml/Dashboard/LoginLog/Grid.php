@@ -36,7 +36,7 @@ class Grid extends \Magento\Backend\Block\Dashboard\Grid
     /**
      * @var string
      */
-    protected $_template = 'Mageplaza_Security::dashboard/grid.phtml';
+    protected $_template = 'TrainingMonish_LoginIP::dashboard/grid.phtml';
 
     /**
      * Grid constructor.

@@ -22,7 +22,7 @@ class LoginLog extends Container
     protected function _construct()
     {
         $this->_controller = 'adminhtml_loginlog';
-        $this->_blockGroup = 'Mageplaza_Security';
+        $this->_blockGroup = 'TrainingMonish_LoginIP';
         $this->_headerText = __('Login Log');
 
         parent::_construct();

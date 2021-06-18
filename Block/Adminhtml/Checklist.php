@@ -15,9 +15,7 @@ use Magento\Framework\App\DeploymentConfig;
 use Magento\Framework\App\ProductMetadataInterface;
 use Magento\Framework\Config\ConfigOptionsListConstants;
 use Magento\User\Model\UserFactory;
-use TrainingMonish\LoginIP\
-
-Helper\Data;
+use TrainingMonish\LoginIP\Helper\Data;
 
 /**
  * Class Checklist
@@ -28,7 +26,7 @@ class Checklist extends Template
     /**
      * @var string
      */
-    protected $_template = 'Mageplaza_Security::checklist/index.phtml';
+    protected $_template = 'TrainingMonish_LoginIP::checklist/index.phtml';
 
     /**
      * @var UserFactory
